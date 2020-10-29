@@ -31,9 +31,9 @@ public class HomePage {
         js.executeScript ( "arguments[0].click();",iconSearch );
     }
 
-    public void navigate_to_homepage()
+    public void navigate_to_homepage(String url)
     {
-        driver.get("http://shop.demoqa.com/");
+        driver.get(url);
     }
 
     public void perform_search(String search)

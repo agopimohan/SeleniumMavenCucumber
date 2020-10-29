@@ -41,4 +41,9 @@ public class PageObjectManager {
         return (checkoutPage == null) ? checkoutPage = new CheckOutPage(driver) : checkoutPage;
 
     }
+
+    public ConfirmationPage getConfirmationPage() {
+
+        return (confirmationPage == null) ? confirmationPage = new ConfirmationPage(driver) : confirmationPage;
+    }
 }

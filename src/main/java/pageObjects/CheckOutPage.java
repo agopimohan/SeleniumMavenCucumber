@@ -8,11 +8,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import selenium.Wait;
+import testDataTypes.Customer;
 
 public class CheckOutPage {
 
+    WebDriver driver;
+
     public CheckOutPage(WebDriver driver)
     {
+
+        this.driver = driver;
         PageFactory.initElements ( driver, this );
     }
 
@@ -82,25 +88,34 @@ public class CheckOutPage {
     public void select_Terms(boolean value) {
         if (value) {
 
-            try { chkbox_Terms.click ();;}
-            catch (StaleElementReferenceException e) {chkbox_Terms.click ();}
+            try {
+                chkbox_Terms.click ( );
+                Wait.untilJqueryIsDone ( driver );
+            }catch (StaleElementReferenceException e)
+            {
+                chkbox_Terms.click ( );
+                Wait.untilJqueryIsDone ( driver );
+
+            }
         }
     }
 
     public void click_PlaceOrder() {
         btn_PlaceOrder.submit ();
+        Wait.untilPageLoadComplete ( driver );
+        Wait.untilJqueryIsDone (driver);
 
     }
 
-    public void fill_PersonalDetails() {
-        enter_FirstName("Automation");
-        enter_LastName("Test");
-        enter_Phone("0000000000");
-        enter_Email("Automation@gmail.com");
-        enter_City("Delhi");
-        enter_Address("Shalimar Bagh");
-        enter_PostCode("110088");
-        select_State("Delhi");
+    public void fill_PersonalDetails(Customer customer) {
+        enter_FirstName(customer.firstName);
+        enter_LastName(customer.lastName);
+        enter_Phone(customer.phoneNumber.home);
+        enter_Email(customer.emailAddress);
+        enter_City(customer.address.city);
+        enter_Address(customer.address.streetAddress);
+        enter_PostCode(customer.address.postCode);
+        select_State(customer.address.state);
 
     }
 }

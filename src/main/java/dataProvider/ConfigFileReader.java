@@ -1,5 +1,8 @@
 package dataProvider;
 
+import enums.DriverType;
+import enums.EnvironmentType;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -35,7 +38,7 @@ public class ConfigFileReader {
     }
 
     public long getImplicitlyWait() {
-        String implicitlyWait = properties.getProperty("implicitlyWait");
+        String implicitlyWait = properties.getProperty("implicitWait");
         if(implicitlyWait != null) return Long.parseLong(implicitlyWait);
         else throw new RuntimeException("implicitlyWait not specified in the Configuration.properties file.");
     }
@@ -44,5 +47,37 @@ public class ConfigFileReader {
         String url = properties.getProperty("url");
         if(url != null) return url;
         else throw new RuntimeException("url not specified in the Configuration.properties file.");
+    }
+
+    public DriverType getBrowser()
+    {
+        String browserName = properties.getProperty ( "browser" );
+
+        if(browserName == null || browserName.equalsIgnoreCase ( "chrome" )) return DriverType.CHROME;
+        else if(browserName.equalsIgnoreCase ( "firefox" )) return DriverType.FIREFOX;
+        else if(browserName.equalsIgnoreCase ( "iexplorer" )) return DriverType.INTERNETEXPLORER;
+        else throw new RuntimeException ( "Browser Name Key value in Configuration.properties is not matched : " + browserName );
+    }
+
+    public EnvironmentType getEnvironment()
+    {
+        String env = properties.getProperty ( "environment" );
+        if(env == null || env.equalsIgnoreCase ( "local" )) return EnvironmentType.LOCAL;
+        else if(env.equalsIgnoreCase ( "remote" )) return EnvironmentType.REMOTE;
+        else throw new RuntimeException ( "Environment Name Key value in Configuration.properties is not matched : " + env );
+    }
+
+    public boolean getBrowserWindowSize()
+    {
+        String windowSize = properties.getProperty ( "windowMaximize");
+        if(windowSize != null) return Boolean.valueOf ( windowSize );
+        return true;
+    }
+
+
+    public String getTestDataResourcePath(){
+        String testDataResourcePath = properties.getProperty("testDataResourcePath");
+        if(testDataResourcePath!= null) return testDataResourcePath;
+        else throw new RuntimeException("Test Data Resource Path not specified in the Configuration.properties file for the Key:testDataResourcePath");
     }
 }
