@@ -2,7 +2,7 @@ package stepDefinitions;
 
 import cucumber.TestContext;
 import enums.Context;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.When;
 import pageObjects.ProductListingPage;
 
 public class ProductPageSteps {

@@ -1,2 +1,8 @@
-stepdefs\StepDefinitions.class
-TestRunner.class
+stepDefinitions\Hooks.class
+stepDefinitions\HomePageSteps.class
+stepDefinitions\CartPageSteps.class
+runners\TestRunner.class
+stepDefinitions\ConfirmationPageSteps.class
+seleniumtests\FirstTest.class
+stepDefinitions\ProductPageSteps.class
+stepDefinitions\CheckOutPageSteps.class

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.717016">
+<testcase classname="Automated end to end test" name="Customer place an order by purchasing an item from search" time="35.717016">
+<system-out><![CDATA[Given User is on Home page..................................................passed
+When User click on search icon..............................................passed
+And enters "dress" on search form...........................................passed
+And choose to buy the first item on the search results page.................passed
+And moves to checkout from mini cart........................................passed
+And enters "Test123" personal information on checkout page..................passed
+And accepts the terms and conditions........................................passed
+And place the order.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

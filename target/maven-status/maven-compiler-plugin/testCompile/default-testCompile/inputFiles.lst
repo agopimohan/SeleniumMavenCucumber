@@ -1,2 +1,8 @@
-C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepdefs\StepDefinitions.java
-C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\TestRunner.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\seleniumtests\FirstTest.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\CheckOutPageSteps.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\Hooks.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\runners\TestRunner.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\ConfirmationPageSteps.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\ProductPageSteps.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\CartPageSteps.java
+C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\java\stepDefinitions\HomePageSteps.java

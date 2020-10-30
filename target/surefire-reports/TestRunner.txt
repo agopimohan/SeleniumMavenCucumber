@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.251 s <<< FAILURE! - in TestRunner
-initializationError(TestRunner)  Time elapsed: 0.004 s  <<< ERROR!
-java.lang.IllegalArgumentException: Not a file or directory: C:\Users\aishg\IdeaProjects\MavenSelenium\src\test\resource\Features\demo.feature
-

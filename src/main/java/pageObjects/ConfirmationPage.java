@@ -25,6 +25,7 @@ public class ConfirmationPage {
 
     public List<String> getProductNames() {
         List<String> productNames = new ArrayList<> ();
+        System.out.println ( prd_List.size () );
         for(WebElement element : prd_List) {
             productNames.add(element.findElement( By.cssSelector(".product-name")).getText());
         }

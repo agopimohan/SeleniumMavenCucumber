@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6013189200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Customer place an order by purchasing an item from search",
+        "description": "",
+        "id": "automated-end-to-end-test;customer-place-an-order-by-purchasing-an-item-from-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 719871600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9755019900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Home page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51680200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on search icon",
+            "match": {
+              "location": "HomePageSteps.user_click_on_search_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2104763100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enters \"dress\" on search form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dress\"",
+                  "offset": 7
+                }
+              ],
+              "location": "HomePageSteps.enters_on_search_form(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7934452100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "choose to buy the first item on the search results page",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item_on_the_search_results_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3826113700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "moves to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1067620800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enters \"Test123\" personal information on checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test123\"",
+                  "offset": 7
+                }
+              ],
+              "location": "CheckOutPageSteps.entersPersonalInformationOnCheckoutPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 764561700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "accepts the terms and conditions",
+            "match": {
+              "location": "CheckOutPageSteps.accepts_the_terms_and_conditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3452290500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "place the order",
+            "match": {
+              "location": "CheckOutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automated end to end test",
+    "description": "  Description: The purpose of this test case is to test end to end integration.",
+    "id": "automated-end-to-end-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/End2End_Test.feature",
+    "tags": []
+  }
+]

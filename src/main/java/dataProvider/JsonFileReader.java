@@ -1,6 +1,6 @@
 package dataProvider;
 
-import io.cucumber.messages.internal.com.google.gson.Gson;
+import com.google.gson.Gson;
 import managers.FileReaderManager;
 import testDataTypes.Customer;
 

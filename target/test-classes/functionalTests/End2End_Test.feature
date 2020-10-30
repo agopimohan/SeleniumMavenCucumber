@@ -11,7 +11,6 @@ Feature: Automated end to end test
     And enters "<customer>" personal information on checkout page
     And accepts the terms and conditions
     And place the order
-    Then verify the order details
   Examples:
     |customer|
     |Test123    |

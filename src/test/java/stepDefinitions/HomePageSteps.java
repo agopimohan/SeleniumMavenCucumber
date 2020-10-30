@@ -1,8 +1,8 @@
 package stepDefinitions;
 
 import cucumber.TestContext;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import managers.FileReaderManager;
 import pageObjects.HomePage;
 
