@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.717016">
-<testcase classname="Automated end to end test" name="Customer place an order by purchasing an item from search" time="35.717016">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="68.227614">
+<testcase classname="Automated end to end test" name="Customer place an order by purchasing an item from search" time="68.227614">
 <system-out><![CDATA[Given User is on Home page..................................................passed
 When User click on search icon..............................................passed
 And enters "dress" on search form...........................................passed
